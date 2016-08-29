@@ -36,6 +36,7 @@ Game.prototype.start = function() {
 Game.prototype.loadScene = function(scene_name)
 {
   var scene = this.scenes[scene_name];
+  this.currentScene = scene;
   var text_lines = [scene.text];
 
   if (scene.actions) {
@@ -49,10 +50,21 @@ Game.prototype.loadScene = function(scene_name)
   this.input.focus()
 }
 
+Game.prototype.performAction = function(code) {
+  var scene = this.currentScene;
+  var action = scene.actions[code - 1];
+  var nextScene = action.scene;
+  this.loadScene(nextScene);
+}
+
 Game.prototype.userInput = function(evt) {
   if (evt.keyCode == 13) {
-    var action_code = Number(this.input.value);
-    if (!isNaN(action_code)) {
+    var actionCode = Number(this.input.value);
+    if (!isNaN(actionCode)) {
+      if ((actionCode > 0) && (actionCode <= this.currentScene.actions.length)) {
+          console.log(`User chose ${actionCode}`);
+          this.performAction(actionCode);
+      }
     }
     this.input.value = null;
   }
