@@ -28,5 +28,10 @@ evaluateCode([
   return `scripts/${script}.js`
 }), function() {
   // starts the game
-  var game = new Game("caperucita.json")
+  var input = document.getElementById("game_input")
+  var output = document.getElementById("game_text");
+  var game = new Game("caperucita.json", input, output);
+  game.load(function() {
+    game.start();
+  })
 })
