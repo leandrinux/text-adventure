@@ -1,0 +1,310 @@
+Caperucita Roja
+
+[INICIO]
+
+Había una vez una nena que vivía muy feliz con su mamá en una pequeña casita en el bosque.
+Un día llegó una carta de su abuelita pidiendo que le llevaran comida porque el abuelo
+se habia fugado con todo su dinero a Las Vegas. Asi fue como la mamá preparó una
+cestita con polenta y una lata de ensalada de frutas y le dijo a Caperucita:
+"Por favor, llévale esta cestita a tu abuelita para que tenga algo que comer,
+pero ten mucho cuidado en el camino!".
+Caperucita tomó la cesta y...
+
+* Caminó hasta lo de la abuelita ->CAMINAR
+* Se preparó para su viaje ->PRIMER_CRUCE
+
+[CAMINAR]
+Con gran determinación Caperucita comenzó el largo camino por el bosque
+hacia casa de la abuelita. Lamentablemente olvidó llevar un mapa que la
+guiara en el sinuoso camino de montaña de 40 kilometros que la separaba
+de su destino y asi fue como nunca volvió a saberse de ella. ->MUERTE
+
+[PRIMER_CRUCE]
+Antes de salir Caperucita buscó en su casa un mapa del bosque y lo guardó
+en su mochila. También tomó una botellita con agua, una navaja y su caperuza.
+Ya lista le dió un beso de despedida a su mamá y salió en viaje hacia la casa
+de la abuelita.
+Una hora mas tarde encontró una bifurcación en su camino. El mapa, arrancado
+de una guía YPF de hace 20 años, estaba desactualizado por lo que no fue de
+mucha ayuda. En el cruce se encontraba un viejito vendiendo pochoclo.
+
+* Tomar el camino de la izquierda ->CAMINO_LARGO
+* Tomar el camino de la derecha ->CAMINO_CORTO
+* Preguntarle al viejito ->[VIEJITO]
+
+[VIEJITO]
+- ¿Estás perdida, nenita? - preguntó el viejito
+- Estoy caminando hacia lo de mi abuelita, pero no sé cual camino seguir - respondió
+Caperucita con timidez.
+- Ah, vas a lo de tu abuelita! - exclamó - ¿Por qué no vienes conmigo? Yo puedo
+alcanzarte en mi van. Ten, toma algo de mi pochoclo
+Caperucita agradecida aceptó y comió del pochoclo del viejito. Algo cansada se
+sentó en la parte de atrás de la van pochoclera y se durmió. Nunca se volvio
+a saber de ella. ->MUERTE
+
+[CAMINO_LARGO]
+Caperucita continuó caminando y caminando hasta que finalmente comenzó a hacerse
+de noche. Con los últimos rayos de luz divisó una casita en el bosque. El camino
+le resultaba familiar y no se sentia cansada por lo que se sintió tentada de
+continuar su viaje
+
+* Continuar caminando ->ACANTILADO
+* Acercarse a la casa ->CASA_VIEJITA
+
+[ACANTILADO]
+Caperucita decidió exigirse a si misma un poco y comenzó a correr tan rapido como
+pudo. A pesar que estaba haciéndose de noche Caperucita se sentía feliz y enérgica,
+por lo que continuó su camino hasta que finalmente se hizo de noche.
+En ese momento la oscuridad del bosque ya no le permitía seguir el camino sin
+tropezarse. Divisó un haz de luz entre los árboles y, presa del entusiasmo propio
+de su juventud, se dirigió hacia él con paso veloz sin advertir que frente a ella
+el terreno daba lugar a un gran acantilado y un río con filosas rocas en su lecho.
+Su pequeño cuerpecito ni siquiera fue suficiente para saciar a las pirañas. ->MUERTE
+
+[CASA_VIEJITA]
+Junto a la puerta de la casita una señora mayor se mecía en su mecedora.
+Caperucita se acercó y dijo:
+- ¡Hola! Mi nombre es Caperucita y estoy viajando a lo de mi abuelita.
+- ¡Hola Caperucita! ¿Cómo puedo ayudarte? - respondio la viejecilla.
+- Se ha hecho de noche y tengo miedo. Puedo quedarme esta noche en su casa?
+- Por supuesto! - respondió la señora - pero antes dime cómo prefieres pagarme
+por este favor. Necesito que alguien limpie mi letrina y me prepare el desayuno.
+
+* Limpiar la letrina ->PRIMERO_LIMPIAR
+* Dormir y preparar el desayuno ->PRIMERO_DESAYUNO
+
+[PRIMERO_LIMPIAR]
+Resignada, Caperucita mojó su pañuelo en un charco de agua y se lo ató alrededor
+de la boca para poder respirar a pesar del nauseabundo olor que emanaba de la
+letrina. La viejecita había descuidado su higiene de gran forma y habia salpicado
+de mierda las paredes y el techo de la pequeña cabina de un metro cuadrado.
+Agotada, en plena oscuridad y con las manos lastimadas luego de fregar las
+asperas y porosas paredes de madera de la cabina, finalmente dió por terminada su
+labor y volvió a la casa, donde la señora le permitió entrar y descansar.
+
+Al día siguiente, Caperucita se levantó muy temprano para escapar antes que la
+señora se despertase. La astuta viejita ya estaba despierta y le exigió que
+preparase el desayuno. De mala gana, Caperucita accedió y preparó un vaso de leche
+y pan con miel. La señora comenzó a comer y exclamó:
+- ¡Este pan sabe a mierda! Mocosa, ¿te lavaste las manos? ¡Hija de puta!
+Asustada Caperucita huyo hacia la puerta mientras escuchaba a la anciana vomitar
+profusamente. Corriendo rápidamente por el camino se alejó, aún podía escuchar
+los gritos de la vieja:
+- ¡Hija de puta! ¡Me va a dar cólera, la puta que te parió! ->[GITANA]
+
+[PRIMERO_DESAYUNO]
+- ¿Puedo descansar primero? - preguntó Caperucita con inocencia.
+La viejita accedió y Caperucita se acostó a dormir en la única y angosta cama
+disponible en el hogar, la cual debió compartir con la flatulenta anciana. Luego
+de una larga noche en la que Caperucita poco pudo dormir finalmente amaneció y se
+dispuso a preparar el desayuno, el que consistió de un vaso de leche y pan con
+miel.
+
+La señora devoró rápidamente su desayuno y dijo:
+- Gracias piba. ¿No tenes un pucho para convidarme? ¡Ah, y no te olvidés
+de limpiarme la letrina o de aca no te vas, ¿me entendiste?!
+Caperucita accedió, le dió uno de sus puchos, tomó un fósforo y le dió fuego.
+Luego tomó un balde y un trapo y salió rumbo a la letrina. Abrió la puerta y
+se encontró con un grotesco despliegue de mierda que cubría todas las superficies
+incluyendo el techo. Caperucita dejo caer el balde y volvio a la casa, donde
+encontró a la vieja empinándose una botella.
+
+- ¡Vieja sucia de mierda! ¡Ni en pedo te limpio la letrina! ¡Eso es un asco! ¡Sos
+una hija de puta, la concha tuya! ¡¿Cómo carajo podes ser tan roñosa?!
+Antes que Caperucita tuviera tiempo a reaccionar, la vieja le lanzó la botella
+y la golpeó en la cabeza, dejándola inconsciente.
+
+Cuando se desperto estaba amaneciendo. Caperucita estaba en el piso, atada de pies y
+manos a una silla. En la cama y justo frente a ella dormía la vieja. Gracias a
+la habilidad que aprendió en prisión, Caperucita logro usar su navaja para librarse
+de sus ataduras. Con gran cuidado caminó hasta una ventana, sólo deteniéndose
+cada vez que la vieja se rajaba una de sus violentas flatulencias. Corrió las cortinas
+de la ventana y se deslizo con cuidado al exterior. De lejos la vió aun durmiendo
+y se le ocurrio una idea.
+
+* Volver a la casa y degollar a la vieja ->DEGOLLAR
+* Prender fuego las cortinas y trabar la puerta desde afuera ->FUEGO
+* Escaparse sin hacer mas ruido ->CORRER
+
+[FUEGO]
+Con sigilo Caperucita encendió un fosforo y prendió fuego las cortinas de
+la ventana. Mientras el fuego se propagaba por la casa, Caperucita corrió a la
+puerta y la trabó con un palo. Comenzó a correr hacia el bosque cuando empezó
+a escuchar los gritos de la anciana pidiendo ayuda. Cuando ya estaba a 200 metros
+escuchó una fuerte explosión y enseguida una onda expansiva la lanzó hacia adelante.
+Aturdida se levanto y dirigió su mirada hacia la casa. Donde esta se encontraba
+ahora solo había un profundo cráter. Satisfecha con su obra, Caperucita recuperó
+su cestita de entre las ruinas y continuó con el camino que le quedaba por delante.
+->[GITANA]
+
+[CORRER]
+Caperucita empezó a correr por el claro, alejándose de la casa tan rápido como
+le era posible. Estaba proxima a alcanzar la seguridad del bosque cuando de
+repente recibió un cascotazo en la cabeza que le apago la tele. Al despertar
+nuevamente se vio maniatada pero sin posibilidad de escapar dado que estaba
+siendo vigilada por dos hombres. Junto a ellos la vieja hablaba en voz baja,
+negociando un precio. Al día siguiente el mercado negro de órganos humanos vió
+una leve baja debido al aumento de la oferta. ->MUERTE
+
+[DEGOLLAR]
+Caperucita Roja volvió al interior de la casa y camino decidida en dirección de
+la anciana durmiente. Su navaja resplandecía en su mano. Cuando finalmente estuvo
+al alcance de su presa, la anciana abrio sus ojos. Caperucita rápidamente hundió
+su hoja en el hombro de la vieja, quien aulló de dolor. A la vez, la vieja elevó
+su brazo derecho, con el que sostenía un gran garrote. El impacto en el rostro
+de Caperucita resultó en que varios de sus dientes volaron por el aire mientras
+su cuerpo inconsciente se desplomaba al piso. Lo último que vió en su vida fue
+el rostro de la vieja asestandole un nuevo golpe en la cabeza. ->MUERTE
+
+[CAMINO_CORTO]
+Luego de dos horas de caminar, Caperucita se adentró en un barrio feo del bosque.
+Súbitamente un lobo apareció en su camino.
+- ¡Hola nena! ¿Tenés hora? - dijo el lobo
+- ¡Un lobo que habla! - exclamó Caperucita y rápidamente le clavó la navaja entre
+los ojos.
+Caperucita tomó su caperuza, envolvió el cuerpo aun caliente del lobo, lo
+cargó sobre sus hombros y continuó su camino, sabiendo que esa noche cenaría bien.
+->GITANA
+
+[GITANA]
+Muchos kilometros mas adelante, Caperucita caminaba con el bosque cuando se encontró
+con la costa de un lago. Junto a él había un carro y unas tiendas donde vivian
+gitanos. Se acercó para confirmar que el camino fuera el correcto, y una señora
+joven pero con la piel muy arrugada por el sol se acercó a ella y le dijo.
+- Niña, no puedo saber si este es el camino que buscas pero seguramente mis
+cartas si lo sepan. Escoge una, pero escoge sabiamente puesto que consultar tu
+fortuna también la modifica!
+
+* Escoger la primera carta ->CARTA_LUNA
+* Escoger la segunda carta ->CARTA_TORRE
+* Escoger la tercer carta ->CARTA_JUICIO
+* Salir corriendo sin mirar atrás ->ACANTILADO
+
+[CARTA_LUNA]
+- Oh, la Luna! Mi niña, esta carta representa tus temores y tu lado oscuro! La
+realidad que has de vivir no será facil. Creo que este no es el camino que buscas,
+pero es demasiado tarde para que elijas otro. Te deseo mucha suerte, niña, la
+necesitarás!
+->FIN_FEO
+
+[CARTA_TORRE]
+- Por todos los espíritus, es la Torre! Una gran prueba se avecina y todo dependera
+de la decision que tomes. No podrás buscar la solución en ningun otro lugar que
+no sea profundo dentro de ti. Este es definitivamente tu camino, pero algo se
+interpone en tu destino. Te deseo mucho coraje, niña, la necesitarás!
+->PERDIDA
+
+[CARTA_JUICIO]
+- Es el Juicio! Presiento, mi niña, que tu camino está pronto a terminar! Este
+es el camino que buscas y tu destino está muy próximo!
+->BUEN_CAMINO
+
+[PERDIDA]
+Al tercer día Caperucita se levantó temprano y continuó con su larga caminata a
+través del bosque. Luego de haber estado caminando por horas había quedado exhausta.
+En ese momento su camino tomó una nueva bifurcación. Debajo de un árbol un hombre cuidaba de una
+vaca mientras atendia un carro de comida. Famélica, decidió acercarse a preguntar.
+
+* Pedir un canelón y leche tibia ->CANELON
+* Comerse una buena morcilla ->MORCILLA
+* Comerse al vendedor ->VENDEDOR
+
+[CANELON]
+- Hola buen hombre. Quisiera un buen canelón, el más grande. Hoy quiero atragantarme!
+Ah, tambien quisiera tomar tanta leche tibia como tengas. Pago lo que me pidas.
+
+Al cabo de un rato, Caperucita ya habia sido tan satisfecha como es humanamente
+posible y se encontraba algo cansada y con un bigote de leche pero no se arrepentia
+de nada. Decidió agradecer al hombre por los servicios proporcionados y continuar
+con su camino. ->CASA_ABUELITA
+
+[MORCILLA]
+- Quiero comerme una buena morcilla ahora mismo. - dijo Caperucita.
+El vendedor la miró desconcertado pero con un suspiro accedió a la petición.
+Lo que ocurrió a continuación no puede ser descripto con palabras, pero digamos
+que Caperucita se fue muy satisfecha pero extrañamente aún con hambre. De esto
+se acordó cuando era ya muy tarde y no le quedaron energias para continuar
+con su camino y debió recostarse en el suelo del bosque para descansar. Una horda
+de ardillas en celo terminaron con su vida esa misma tarde.
+->MUERTE
+
+[VENDEDOR]
+Caperucita decidió que era un buen momento para probar la carne humana, por lo
+que saltó encima del hombre y, sosteniendo un gran palo en su mano, lo golpeo en
+la cabeza. El hombre se retorcio de dolor y gritó. Durante ese momento de distracción
+Caperucita sacó su navaja y le corto la cabeza. El hombre grito tan fuerte que
+los pájaros huyeron de las copas de los árboles. Pronto éste habia muerto y
+Caperucita, no sintiendose presionada socialmente para usar cubiertos, decidio
+alimentarse del hombre con sus propios dientes mientras que algunos perros salvajes
+se unían al festín.
+
+Más y más alimanas se sumaron para devorar los restos del pobre vendedor. Un
+jaguar decidió acercarse a ver qué le habian dejado, pero como vió que solo
+había quedado un pie decidió comerse a la niña. Y colorin colorado, este
+cuento asi se ha acabado.
+->MUERTE
+
+[CASA_ABUELITA]
+Luego de un viaje muy largo finalmente Caperucita avistó la casa de la abuelita!
+Rápidamente comenzó a correr hasta llegar a la puerta de la casa. Algunas cosas
+parecían haber cambiado, seguramente la abuelita habria redecorado el exterior
+de la casa recientemente.
+
+* Llamar a la puerta ->FIN_BUENO
+* Entrar a la casa ->CASA_VIEJITO
+
+[CASA_VIEJITO]
+Caperucita entró a la casa y comenzó a buscar a su abuelita. Pronto pudo darse
+cuenta que la casa en la que habia irrumpido no era la casa en la que ella
+queria estar. En ese momento se escuchó el golpe de una puerta al cerrarse y
+los pasos de una persona en la casa. Caperucita abrió una ventana para escapar,
+pero al hacerlo rompió un jarrón y el ruido atrajo al dueño de casa. Un viejito,
+el mismo que unos días atrás había visto vendiendo pochoclo la saludo:
+- Oh, oh, no puedo creer mi suerte! No te preocupes nenita, yo voy a cuidar de
+vos mientras llamamos a tus papas, si?
+Nunca mas se supo nada de Caperucita.
+->MUERTE
+
+[BUEN_CAMINO]
+Feliz por la predicción, Caperucita decidió agradecer a la gitana y continuar su
+camino. Diez minutos más tarde dobló en una curva del mismo y frente a ella apareció
+la tan deseada imagen de la casa de su abuelita. Había logrado llegar! Con gran
+felicidad se acercó y llamó a la puerta
+->FIN_BUENO
+
+[FIN_FEO]
+Caperucita decidió no dejarse asustar por la predicción de la gitana. Continuó
+caminando enérgicamente y a lo largo de varios días continuó su viaje sin sorpresas
+y con gran determinación. Pronto esa seguridad en si misma se desvaneció estrepitosamente
+cuando se dio cuenta que llevaba días caminando y que ya debería haber llegado a
+la casa de la abuelita. No tuvo otra opción mas que deshacer camino y tomar
+rutas diferentes. Todas, lamentablemente, resultaron ser callejones sin salida.
+Al cabo de 5 días Caperucita comenzó a comer las pobres provisiones de la
+cestita. 4 días más tarde se encontraba caminando en una llanura sin árboles ni
+personas, sin alimento ni clara idea de cuales serian sus proximos pasos.
+Un día más tarde los buitres comenzaron a seguirla y al cabo de muy poco tiempo
+mas finalmente tuvieron la oportunidad de deleitarse con sus magros restos.
+->MUERTE
+
+[FIN_BUENO]
+- Hola nena! Al fin llegaste! Pensé que vos y tu madre habían decidido dejarme
+morir. A ver que me trajiste? - preguntó la abuelita. Caperucita le dio la
+cestita y se sentó junto a la mecedora.
+- Polenta y ensalada de fruta en lata!? Cómo se puede ser tan miserable!? Te
+vas de aca ya mismo y le decis a tu madre que te mande de regreso con comida de
+verdad! Como puede ser tan hija de puta, con las horas que me pase sufriendo para
+traerla al mundo y con todo el AMOR que le di por tantos años. Que hija...
+
+Caperucita decidió no quedarse a escuchar todo ese discurso y tampoco estaba
+dispuesta a volver a la casa de su condenada madre. Simplemente abandonó
+la habitación, abrio la puerta de la casa de par en par y trepó al techo.
+Pronto una jauría de lobos invadió la casa y se hizo cargo del resto. Caperucita
+solo podia escuchar los gritos de su abuelita, los gruñidos de los lobos y el
+sonido de la vajilla y los vidrios al romperse. Pronto no escuchó nada y vio
+a los lobos alejarse. Así fue como Caperucita logró su independencia y casa
+propia, donde fue feliz por mucho tiempo y comió perdices.
+
+EL FIN.
+
+[MUERTE]
+HAS MUERTO
