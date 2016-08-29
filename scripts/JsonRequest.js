@@ -12,7 +12,7 @@ var JsonRequest = function(options) {
   }
 
   var xhr = new XMLHttpRequest();
-  xhr.responseType = 'json';
+  xhr.responseType = 'text';
   xhr.onreadystatechange = function() {
     try {
       if (xhr.readyState === 4) {
