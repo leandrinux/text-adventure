@@ -2,18 +2,20 @@
    "game":{
       "name":"Caperucita Roja",
       "starting_scene":"once_upon_a_time",
+      "death_message":"HAS MUERTO",
+      "finale_message":"FIN",
       "scenes":{
          "once_upon_a_time":{
-            "text":"Había una vez una nena que vivía muy feliz con su mamá en una pequeña casita en el bosque. Un día llegó una carta de su abuelita pidiendo que le llevaran comida porque el abuelo se habia fugado con todo su dinero a Las Vegas. Asi fue como la mamá preparó una cestita con polenta y una lata de ensalada de frutas y le dijo a Caperucita:\n\n\"Por favor, llévale esta cestita a tu abuelita para que tenga algo que comer, pero ten mucho cuidado en el camino!\".\n\nCaperucita tomó la cesta y se dispuso a emprender su viaje.",
+            "text":"Había una vez una nena que vivía muy feliz con su mamá en una pequeña casita en el bosque. Un día llegó una carta de su abuelita pidiendo que le llevaran comida porque el abuelo se habia fugado con todo su dinero a Las Vegas. Asi fue como la mamá preparó una cestita con polenta y una lata de ensalada de frutas y dijo:\n\n\"¡Por favor Caperucita, llévale esta cestita a tu abuelita para que tenga algo que comer, pero ten mucho cuidado en el camino!\".\n\nCaperucita tomó la cesta y se dispuso a emprender su viaje.",
             "actions":[
                { "name": "Caminó hasta lo de la abuelita", "scene":"caminar" },
                { "name": "Se preparó para su viaje", "scene":"primer_cruce" }
             ]
          },
          "caminar":{
-            "text":"Con gran determinación Caperucita comenzó el largo camino por el bosque hacia casa de la abuelita. Lamentablemente olvidó llevar un mapa que la guiara en el sinuoso camino de montaña de 40 kilometros que la separaba de su destino y asi fue como nunca volvió a saberse de ella.",
+            "text":"Con gran determinación Caperucita comenzó el largo camino por el bosque hacia la casa de la abuelita. Lamentablemente olvidó llevar un mapa que la guiara en el sinuoso camino de montaña de 40 kilometros que la separaba de su destino y asi fue como nunca volvió a saberse de ella.",
             "script":[
-               { "command":"move_to", "argument":"muerte" }
+               { "name":"die" }
             ]
          },
          "primer_cruce":{
@@ -27,13 +29,7 @@
          "viejito":{
             "text":"- ¿Estás perdida, nenita? - preguntó el viejito\n- Estoy caminando hacia lo de mi abuelita, pero no sé cual camino seguir - respondió Caperucita con timidez.\n- Ah, vas a lo de tu abuelita! - exclamó - ¿Por qué no vienes conmigo? Yo puedo alcanzarte en mi van. Ten, toma algo de mi pochoclo.\nCaperucita agradecida aceptó y comió del pochoclo del viejito. Algo cansada se sentó en la parte de atrás de la van pochoclera y se durmió. Nunca se volvio a saber de ella.",
             "script":[
-               { "command":"move_to", "argument":"muerte" }
-            ]
-         },
-         "muerte":{
-            "text":"HAS MUERTO.",
-            "script":[
-               { "command":"end_game" }
+               { "name":"die" }
             ]
          },
          "camino_largo":{
@@ -46,7 +42,7 @@
          "acantilado":{
             "text":"Caperucita decidió exigirse a si misma un poco y comenzó a correr tan rapido como pudo. A pesar que estaba haciéndose de noche Caperucita se sentía feliz y enérgica, por lo que continuó su camino hasta que finalmente se hizo de noche. En ese momento la oscuridad del bosque ya no le permitía seguir el camino sin tropezarse. Divisó un haz de luz entre los árboles y, presa del entusiasmo propio de su juventud, se dirigió hacia él con paso veloz sin advertir que frente a ella el terreno daba lugar a un gran acantilado y un río con filosas rocas en su lecho. Su pequeño cuerpecito ni siquiera fue suficiente para saciar a las pirañas.",
             "script":[
-               { "command":"move_to", "argument":"muerte" }
+               { "name":"die" }
             ]
          },
          "casa_viejita":{
@@ -58,8 +54,8 @@
          },
          "primero_limpiar":{
             "text":"Resignada, Caperucita mojó su pañuelo en un charco de agua y se lo ató alrededor de la boca para poder respirar a pesar del nauseabundo olor que emanaba de la letrina. La viejecita había descuidado su higiene de gran forma y habia salpicado de mierda las paredes y el techo de la pequeña cabina de un metro cuadrado. Agotada, en plena oscuridad y con las manos lastimadas luego de fregar las ásperas y porosas paredes de madera de la cabina, finalmente dió por terminada su labor y volvió a la casa, donde la señora le permitió entrar y descansar.\n\nAl día siguiente, Caperucita se levantó muy temprano para escapar antes que la señora se despertase. La astuta viejita ya estaba despierta y le exigió que preparase el desayuno. De mala gana, Caperucita accedió y preparó un vaso de leche y pan con miel. La señora comenzó a comer y exclamó:\n- ¡Este pan sabe a mierda! Mocosa, ¿te lavaste las manos? ¡Hija de puta!\nAsustada Caperucita huyo hacia la puerta mientras escuchaba a la anciana vomitar profusamente. Corriendo rápidamente por el camino se alejó, aún podía escuchar los gritos de la vieja:\n- ¡Hija de puta! ¡Me va a dar cólera, la puta que te parió!",
-            "script":[
-               { "command":"move_to", "argument":"gitana" }
+            "actions":[
+               { "name":"Correr", "scene":"gitana" }
             ]
          },
          "primero_desayuno":{
@@ -72,26 +68,26 @@
          },
          "fuego":{
             "text":"Con sigilo Caperucita encendió un fosforo y prendió fuego las cortinas de la ventana. Mientras el fuego se propagaba por la casa, Caperucita corrió a la puerta y la trabó con un palo. Comenzó a correr hacia el bosque cuando empezó a escuchar los gritos de la anciana pidiendo ayuda. Cuando ya estaba a 200 metros escuchó una fuerte explosión y enseguida una onda expansiva la lanzó hacia adelante.\nAturdida se levanto y dirigió su mirada hacia la casa. Donde esta se encontraba ahora solo había un profundo cráter. Satisfecha con su obra, Caperucita recuperó su cestita de entre las ruinas y continuó con el camino que le quedaba por delante.",
-            "script":[
-               { "command":"move_to", "argument":"gitana" }
+            "actions":[
+               { "name":"Continuar con el viaje", "scene":"gitana" }
             ]
          },
          "correr":{
             "text":"Caperucita empezó a correr por el claro, alejándose de la casa tan rápido como le era posible. Estaba proxima a alcanzar la seguridad del bosque cuando de repente recibió un cascotazo en la cabeza que le apago la tele. Al despertar nuevamente se vio maniatada pero sin posibilidad de escapar dado que estaba siendo vigilada por dos hombres. Junto a ellos la vieja hablaba en voz baja, negociando un precio. Al día siguiente el mercado negro de órganos humanos vió una leve baja debido al aumento de la oferta.",
             "script":[
-               { "command":"move_to", "argument":"muerte" }
+               { "name":"die" }
             ]
          },
          "degollar":{
             "text":"Caperucita Roja volvió al interior de la casa y camino decidida en dirección de la anciana durmiente. Su navaja resplandecía en su mano. Cuando finalmente estuvo al alcance de su presa, la anciana abrio sus ojos. Caperucita rápidamente hundió su hoja en el hombro de la vieja, quien aulló de dolor. A la vez, la vieja elevó su brazo derecho, con el que sostenía un gran garrote. El impacto en el rostro de Caperucita resultó en que varios de sus dientes volaron por el aire mientras su cuerpo inconsciente se desplomaba al piso. Lo último que vió en su vida fu el rostro de la vieja asestandole un nuevo golpe en la cabeza.",
             "script":[
-               { "command":"move_to", "argument":"muerte" }
+               { "name":"die" }
             ]
          },
          "camino_corto":{
             "text":"Luego de dos horas de caminar, Caperucita se adentró en un barrio feo del bosque. Súbitamente un lobo apareció en su camino.\n- ¡Hola nena! ¿Tenés hora? - dijo el lobo\n- ¡Un lobo que habla! - exclamó Caperucita y rápidamente le clavó la navaja entre los ojos.\nCaperucita tomó su caperuza, envolvió el cuerpo aun caliente del lobo, lo cargó sobre sus hombros y continuó su camino, sabiendo que esa noche cenaría bien.",
-            "script":[
-               { "command":"move_to", "argument":"gitana" }
+            "actions":[
+               { "name":"Continuar caminando", "scene":"gitana" }
             ]
          },
          "gitana":{
@@ -105,20 +101,20 @@
          },
          "carta_luna":{
             "text":"- ¡Oh, la Luna! Mi niña, esta carta representa tus temores y tu lado oscuro! La realidad que has de vivir no será facil. Creo que este no es el camino que buscas, pero es demasiado tarde para que elijas otro. Te deseo mucha suerte, niña, la necesitarás!",
-            "script":[
-               { "command":"move_to", "argument":"fin_feo" }
+            "actions":[
+               { "name":"Continuar el viaje", "scene":"fin_feo" }
             ]
          },
          "carta_torre":{
             "text":"- ¡Por todos los espíritus, es la Torre! Una gran prueba se avecina y todo dependera de la decision que tomes. No podrás buscar la solución en ningun otro lugar que no sea profundo dentro de ti. Este es definitivamente tu camino, pero algo se interpone en tu destino. Te deseo mucho coraje, niña, la necesitarás!",
-            "script":[
-               { "command":"move_to", "argument":"perdida" }
+            "actions":[
+               { "name":"Continuar el viaje", "scene":"perdida" }
             ]
          },
          "carta_juicio":{
             "text":"- ¡Es el Juicio! Presiento, mi niña, que tu camino está pronto a terminar! Este es el camino que buscas y tu destino está muy próximo!",
-            "script":[
-               { "command":"move_to", "argument":"buen_camino" }
+            "actions":[
+               { "name":"Continuar el viaje", "scene":"buen_camino" }
             ]
          },
          "perdida":{
@@ -131,20 +127,20 @@
          },
          "canelon":{
             "text":"- Hola buen hombre. Hoy me gustaria darme un buen gusto asi que quisiera un buen canelón, el más grande. ¡Hoy quiero atragantarme! Ah, tambien dame toda la leche tibia que tengas. Pago lo que me pidas.\n\nAl cabo de un rato, Caperucita ya habia sido tan satisfecha como es humanamente posible y se encontraba algo cansada y con un bigote de leche pero no se arrepentia de nada. Decidió agradecer al hombre por los servicios proporcionados y continuar con su camino.",
-            "script":[
-               { "command":"move_to", "argument":"casa_abuelita" }
+            "actions":[
+               { "name":"Continuar el viaje", "scene":"casa_abuelita" }
             ]
          },
          "morcilla":{
             "text":"- Quiero comerme una buena morcilla ahora mismo. - dijo Caperucita.\nEl vendedor la miró desconcertado pero con un suspiro accedió a la petición. Lo que ocurrió a continuación no puede ser descripto sin convertir esta aventura de texto en literatura pornográfica. Dejemoslo en que Caperucita se fue muy satisfecha pero extrañamente aún con hambre. De esto se acordó cuando era ya muy tarde y no le quedaron energias para continuar con su camino y debió recostarse en el suelo del bosque para descansar. Una horda de ardillas en celo terminaron con su vida esa misma tarde.",
             "script":[
-               { "command":"move_to", "argument":"muerte" }
+               { "name":"die" }
             ]
          },
          "vendedor":{
             "text":"Caperucita decidió que era un buen momento para probar la carne humana, por lo que se acercó al hombre como un cazador entrenado y usando una pesada rama lo golpeó en la cabeza. El hombre se retorcio de dolor y gritó. Durante ese momento de distracción Caperucita sacó su navaja y se la clavó en el cuello. El hombre grito tan fuerte que los pájaros huyeron de las copas de los árboles. Pronto la presa habia muerto y Caperucita, no sintiéndose presionada socialmente para usar cubiertos, decidio alimentarse del hombre royéndolo con sus propios dientes al igual que lo comenzaron a hacer algunos perros salvajes que se unieron al festín.\n\nMás y más alimanas se sumaron para devorar los restos del pobre vendedor. Un jaguar decidió acercarse a ver qué le habian dejado, pero como vió que solo había quedado un pie decidió comerse a la niña. Y colorin colorado, este cuento asi se ha acabado.",
             "script":[
-               { "command":"move_to", "argument":"muerte" }
+               { "name":"die" }
             ]
          },
          "casa_abuelita":{
@@ -157,31 +153,25 @@
          "casa_viejito":{
             "text":"Caperucita entró a la casa y comenzó a buscar a su abuelita. Pronto pudo darse cuenta que la casa en la que habia irrumpido no era la casa en la que ella queria estar. En ese momento se escuchó el golpe de una puerta al cerrarse y los pasos de una persona en la casa. Caperucita abrió una ventana para escapar, pero al hacerlo rompió un jarrón y el ruido atrajo al dueño de casa. Un viejito, el mismo que unos días atrás había visto vendiendo pochoclo la saludo:\n- Oh, oh, no puedo creer mi suerte! No te preocupes nenita, yo voy a cuidar de vos mientras llamamos a tus papas, si?\n\nNunca mas se supo nada de Caperucita.",
             "script":[
-               { "command":"move_to", "argument":"muerte" }
+               { "name":"die" }
             ]
          },
          "buen_camino":{
-            "text":"Feliz por la predicción, Caperucita decidió agradecer a la gitana y continuar su camino. Diez minutos más tarde dobló en una curva del mismo y frente a ella apareció la imagen que tanto deseaba ver: la casa de su abuelita. ¡Había logrado llegar con vida! Con gran felicidad se acercó y llamó a la puerta.",
-            "script":[
-               { "command":"move_to", "argument":"fin_bueno" }
+            "text":"Feliz por la predicción, Caperucita decidió agradecer a la gitana y continuar su camino. Diez minutos más tarde dobló en una curva del mismo y frente a ella apareció la imagen que tanto deseaba ver: la casa de su abuelita. ¡Había logrado llegar con vida! Con gran felicidad se acercó a la entrada.",
+            "actions":[
+               { "name":"Llamar a la puerta", "scene":"fin_bueno" }
             ]
          },
          "fin_feo":{
             "text":"Caperucita decidió no dejarse asustar por la predicción de la gitana. Continuó caminando enérgicamente y a lo largo de varios días continuó su viaje sin sorpresas y con gran determinación. Pronto esa seguridad en si misma se desvaneció estrepitosamente cuando se dio cuenta que llevaba días caminando y que ya debería haber llegado a la casa de la abuelita. No tuvo otra opción mas que deshacer camino y tomar rutas diferentes. Todas, lamentablemente, resultaron ser callejones sin salida.\n\nAl cabo de 5 días Caperucita comenzó a comer las pobres provisiones de la cestita. 4 días más tarde se encontraba caminando en una llanura sin árboles ni personas, sin alimento ni clara idea de cuales serian sus proximos pasos. Un día más tarde los buitres comenzaron a seguirla y al cabo de muy poco tiempo mas finalmente tuvieron la oportunidad de deleitarse con sus magros restos.",
             "script":[
-               { "command":"move_to", "argument":"muerte" }
+               { "name":"die" }
             ]
          },
          "fin_bueno":{
-            "text":"- Hola nena! Al fin llegaste! Pensé que vos y tu madre habían decidido dejarme morir. A ver que me trajiste? - preguntó la abuelita. Caperucita le dio la cestita y se sentó junto a la mecedora.\n- Polenta y ensalada de fruta en lata!? Cómo se puede ser tan miserable!? Te vas de aca ya mismo y le decis a tu madre que te mande de regreso con comida de verdad! Como puede ser tan hija de puta, con las horas que me pase sufriendo para traerla al mundo y con todo el AMOR que le di por tantos años. Que hija de mil putas y la c...\n\nCaperucita decidió no quedarse a escuchar todo ese discurso y tampoco estaba dispuesta a volver a la casa de su condenada madre. Simplemente abandonó la habitación, abrio la puerta de la casa de par en par y trepó al techo. Pronto una jauría de lobos invadió la casa y se hizo cargo del resto. Caperucita solo podia escuchar los gritos de su abuelita, los gruñidos de los lobos y el sonido de la vajilla y los vidrios al romperse. Pronto no escuchó nada y vio a los lobos alejarse. Así fue como Caperucita logró su independencia y casa propia, donde fue feliz por mucho tiempo y comió perdices.\n\nEL FIN.",
+            "text":"- Hola nena! Al fin llegaste! Pensé que vos y tu madre habían decidido dejarme morir. A ver que me trajiste? - preguntó la abuelita. Caperucita le dio la cestita y se sentó junto a la mecedora.\n- Polenta y ensalada de fruta en lata!? Cómo se puede ser tan miserable!? Te vas de aca ya mismo y le decis a tu madre que te mande de regreso con comida de verdad! Como puede ser tan hija de puta, con las horas que me pase sufriendo para traerla al mundo y con todo el AMOR que le di por tantos años. Que hija de mil putas y la c...\n\nCaperucita decidió no quedarse a escuchar todo ese discurso y tampoco estaba dispuesta a volver a la casa de su condenada madre. Simplemente abandonó la habitación, abrio la puerta de la casa de par en par y trepó al techo. Pronto una jauría de lobos invadió la casa y se hizo cargo del resto. Caperucita solo podia escuchar los gritos de su abuelita, los gruñidos de los lobos y el sonido de la vajilla y los vidrios al romperse. Pronto no escuchó nada y vio a los lobos alejarse. Así fue como Caperucita logró su independencia y casa propia, donde fue feliz por mucho tiempo y comió perdices.",
             "script":[
-               { "command":"end_game" }
-            ]
-         },
-         "muerte":{
-            "text":"\n☠️ HAS MUERTO ☠️\n",
-            "script":[
-               { "command":"end_game" }
+               { "name":"end_game" }
             ]
          }
        }

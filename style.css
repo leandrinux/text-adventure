@@ -1,0 +1,40 @@
+body {
+  background-color: #eaeaea;
+  color: #3a3a3a;
+  font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
+  font-size: 19pt;
+  line-height: 140%;
+}
+
+#game_text {
+  background-color: white;
+  margin: 5% 10% auto;
+  padding: 5%;
+  border: none;
+}
+
+#game_input {
+  display: block;
+  margin: 1% auto;
+  border: none;
+  text-align: center;
+  width: 15%;
+  padding: 1%;
+  font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
+  font-size: 19pt;
+  color: transparent;
+  text-shadow: 0 0 0 #3a3a3a;
+}
+
+ol {
+  padding: 0 20pt;
+  color: #9a9a9a;
+}
+
+hr {
+  margin-top: 5%;
+}
+
+h3 {
+  text-align: center;
+}
